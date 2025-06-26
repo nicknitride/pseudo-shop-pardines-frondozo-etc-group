@@ -1,5 +1,9 @@
 # Displays product listings
+import * from product_model.pseudo;
+
+current_catalog = <API endpoint that returns the latest uploaded catalog item with a shoe_object array>
+
 
 # Placeholder function:
-# function display_products()
-
+fun display_products():
+    current_list = list_getter.pseudo(current_catalog)
