@@ -11,7 +11,7 @@ product_list = list_getter(api_endpoint)
 fun filter_products(filters):
     results = []
     for product in product_list:
-        match = true
+        match = false
         for key in filters:
             if product[key] != filters[key]:
                 match = false
