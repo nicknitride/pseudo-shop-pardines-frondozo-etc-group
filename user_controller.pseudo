@@ -26,3 +26,13 @@ function create_user(name, email, password){
 	return true
 }
 
+function login_user(email, password){
+	for user in user_db{
+		if (user.email == email && user.password == hash(password)){
+			print(email + "LOGIN SUCCESSFUL")
+			return true
+		}
+	}
+	print("LOGIN FAILED")
+	return false
+}
