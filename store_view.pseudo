@@ -18,3 +18,12 @@ fun filter_products(filters):
         if match == true:
             results.append(product)
     return results
+
+# Example filters (simulate user input or test case)
+filters = {
+    "color": "red",
+    "brand": "Nike"
+}
+
+# filtered_products will be passed to display_products()
+
