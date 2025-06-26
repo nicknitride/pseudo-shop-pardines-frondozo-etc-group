@@ -10,5 +10,12 @@ product_object = {
 }
 
 # Placeholder product list
-product_list = []
+product_list = [
+    nike_1_object,
+    nike_2_object,
+    nike_3_object
+    ...
+]
 
+fun list_getter(str: api_endpoint):
+    product_list = get(api_endpoint).parseJSON()
