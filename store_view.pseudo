@@ -38,8 +38,27 @@ filters = {
 fun main_store_view():
     middle_widget.display(display_products())
 
-# displauy products
+# display products
 function display_products():
     print "==================================="
     print "      Welcome to our Pseudo-Shop!  "
     print "==================================="
+
+    if product_list is empty:
+        print "No products available at the moment."
+        print "-----------------------------------"
+    else:
+        for each product in product_list:
+            print "-----------------------------------"
+            print "Product Name: " + product.name
+            print "Price: $" + product.price # Assuming price is a numeric attribute
+            print "  Attributes:"
+            print "    Width: " + product.width + " units"
+            print "    Height: " + product.height + " units"
+            print "    Length: " + product.length + " units"
+            print "    Weight: " + product.weight + " kg"
+            print "    Color: " + product.color
+            print "    Brand: " + product.brand
+        print "-----------------------------------"
+        print "End of Product List."
+        print "==================================="
