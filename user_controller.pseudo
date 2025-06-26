@@ -7,3 +7,22 @@
 #In memory user data, list of dictionaries.
 user_db = []
 
+function create_user(name, email, password){
+	for user in user_db{
+		if user.email == email{
+			print("EMAIL ALREADY IN USE")
+			return false
+		}
+	}
+	
+	new_user = {
+		"name": name,
+		"email": email,
+		"password": hash(password)
+	}
+	
+	add.user_db(new_user)
+	print("REGISTRATION SUCCESSFUL")
+	return true
+}
+
