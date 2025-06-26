@@ -1,5 +1,45 @@
 # Displays product listings
+import * from product_model.pseudo;
+
+current_catalog = <API endpoint that returns the latest uploaded catalog item with a shoe_object array>
 
 # Placeholder function:
 # function display_products()
 
+# Imports product data
+import { product_list } from product_model.pseudo
+
+# Simulated API endpoint
+api_endpoint = "/products/v2"
+
+# Retrieve product list from backend
+product_list = list_getter(api_endpoint)
+
+# Filters products based on exact-match filters
+fun filter_products(filters):
+    results = []
+    for product in product_list:
+        match = true
+        for key in filters:
+            if product[key] != filters[key]:
+                match = false
+        if match == true:
+            results.append(product)
+    return results
+
+# Example filters (simulate user input or test case)
+filters = {
+    "color": "red",
+    "brand": "Nike"
+}
+
+# filtered_products will be passed to display_products()
+
+fun main_store_view():
+    middle_widget.display(display_products())
+
+# displauy products
+function display_products():
+    print "==================================="
+    print "      Welcome to our Pseudo-Shop!  "
+    print "==================================="
