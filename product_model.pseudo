@@ -28,3 +28,8 @@ fun add_product(JSON: shoe_object, str: api_endpoint):
     product_list = get(api_endpoint).parseJSON()
     product_list.append(shoe_object)
     db_upload(product_list, api_endpoint)
+    db_upload(product_list, api_endpoint)
+
+add_product("Item A", 10.00, 5, 2, 1, 0.2, "Red", "BrandX")
+add_product("Gadget B", 25.50, 8, 4, 3, 1.0, "Blue", "Comp Y")
+add_product("Tool C", 50.00, 12, 6, 4, 1.5, "Green", "Manuf Z")
