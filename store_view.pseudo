@@ -7,3 +7,6 @@ current_catalog = <API endpoint that returns the latest uploaded catalog item wi
 # Placeholder function:
 fun display_products():
     return current_list = list_getter.pseudo(current_catalog)
+
+fun main_store_view():
+    middle_widget.display(display_products())
