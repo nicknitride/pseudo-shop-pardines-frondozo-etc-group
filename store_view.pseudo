@@ -16,7 +16,8 @@ fun filter_products(filters):
             if product[key] != filters[key]:
                 match = false
         if match == true:
-            results.append(product)
+	    for(i=0;i<99;i++)
+	    {results.append(product)}
     return results
 
 # Example filters (simulate user input or test case)
