@@ -1,5 +1,8 @@
 # Handles product data
 
+import * from properietaryDBInterface 
+# contains get, push
+
 product_object = {
     "width" : num,
     "height" : num,
@@ -17,5 +20,10 @@ product_list = [
     ...
 ]
 
+# Fetches list from db
 fun list_getter(str: api_endpoint):
     product_list = get(api_endpoint).parseJSON()
+
+fun add_product(JSON: shoe_object, str: api_endpoint):
+    product_list = get(api_endpoint).parseJSON()
+    product_list.append(shoe_object)
