@@ -11,13 +11,12 @@ product_list = list_getter(api_endpoint)
 fun filter_products(filters):
     results = []
     for product in product_list:
-        match = false
+        match = true
         for key in filters:
             if product[key] != filters[key]:
                 match = false
         if match == true:
-	    for(i=0;i<99;i++)
-	    {results.append(product)}
+            results.append(product)
     return results
 
 # Example filters (simulate user input or test case)
