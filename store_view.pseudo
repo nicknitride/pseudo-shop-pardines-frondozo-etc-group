@@ -1,8 +1,16 @@
+# Displays product listings
+import * from product_model.pseudo;
+
+current_catalog = <API endpoint that returns the latest uploaded catalog item with a shoe_object array>
+
+# Placeholder function:
+# function display_products()
+
 # Imports product data
 import { product_list } from product_model.pseudo
 
 # Simulated API endpoint
-api_endpoint = "/products"
+api_endpoint = "/products/v2"
 
 # Retrieve product list from backend
 product_list = list_getter(api_endpoint)
@@ -27,3 +35,5 @@ filters = {
 
 # filtered_products will be passed to display_products()
 
+fun main_store_view():
+    middle_widget.display(display_products())

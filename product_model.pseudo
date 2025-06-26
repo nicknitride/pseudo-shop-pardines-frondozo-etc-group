@@ -1,16 +1,30 @@
 # Handles product data
 
-# Sample structure:
-# product = {
-#     name: "Sample Product",
-#     width: 10,
-#     height: 5,
-#     length: 20,
-#     weight: 1.5,
-#     color: "red",
-#     brand: "Generic"
-# }
+import * from properietaryDBInterface 
+# contains get, push
+
+product_object = {
+    "width" : num,
+    "height" : num,
+    "length" : num,
+    "weight": num,
+    "color": string,
+    "brand" : string
+}
 
 # Placeholder product list
-product_list = []
+product_list = [
+    nike_1_object,
+    nike_2_object,
+    nike_3_object,
+    ...
+]
 
+# Fetches list from db
+fun list_getter(str: api_endpoint):
+    product_list = get(api_endpoint).parseJSON()
+
+fun add_product(JSON: shoe_object, str: api_endpoint):
+    product_list = get(api_endpoint).parseJSON()
+    product_list.append(shoe_object)
+    db_upload(product_list, api_endpoint)
