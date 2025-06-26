@@ -1,5 +1,9 @@
-# Displays product listings
+# Imports product data
+import { product_list } from product_model.pseudo
 
-# Placeholder function:
-# function display_products()
+# Simulated API endpoint
+api_endpoint = "/products"
+
+# Retrieve product list from backend
+product_list = list_getter(api_endpoint)
 
