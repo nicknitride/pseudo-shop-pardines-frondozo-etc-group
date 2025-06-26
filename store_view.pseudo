@@ -7,3 +7,14 @@ api_endpoint = "/products"
 # Retrieve product list from backend
 product_list = list_getter(api_endpoint)
 
+# Filters products based on exact-match filters
+fun filter_products(filters):
+    results = []
+    for product in product_list:
+        match = true
+        for key in filters:
+            if product[key] != filters[key]:
+                match = false
+        if match == true:
+            results.append(product)
+    return results
