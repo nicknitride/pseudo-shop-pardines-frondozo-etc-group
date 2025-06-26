@@ -16,7 +16,7 @@ product_object = {
 product_list = [
     nike_1_object,
     nike_2_object,
-    nike_3_object
+    nike_3_object,
     ...
 ]
 
@@ -27,3 +27,4 @@ fun list_getter(str: api_endpoint):
 fun add_product(JSON: shoe_object, str: api_endpoint):
     product_list = get(api_endpoint).parseJSON()
     product_list.append(shoe_object)
+    db_upload(product_list, api_endpoint)
