@@ -2,6 +2,8 @@
 
 **Date:** June 28, 2025
 **Team:** Ivan Frondozo, Jaime Manalo, Nicholo Pardines, Paolo Flores, Johnvee Mandal
+
+
 **Project:** FECP5 Final Exercise - Pseudo Shop
 
 This document summarizes the team's experience, challenges, and learnings during the development of the Pseudo Shop project.
