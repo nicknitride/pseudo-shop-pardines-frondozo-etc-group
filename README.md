@@ -10,7 +10,7 @@ This document summarizes the team's experience, challenges, and learnings during
 
 ### 1. How did your team divide the work?
 
-We adopted a **feature-branch workflow**. Each of the four developers was responsible for a specific feature, and **Johnvee Mandal** acted as our **Project Manager**. His role was crucial in acting as a communication bridge, helping to coordinate the integration of different features, and guiding the resolution process when conflicts emerged.
+We adopted a **feature-branch workflow**. Each of the four developers was responsible for a specific feature, and **Johnvee Mandal** acted as our **Project Manager**. 
 
 The work was divided as follows:
 
